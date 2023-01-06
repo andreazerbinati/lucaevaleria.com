@@ -88,7 +88,7 @@ p{
   transform:rotate(-45deg);
 }
 
-.photo3{
+.photos{
   position:relative;
   width:100%;
   border-radius: 1rem;
@@ -100,6 +100,7 @@ p{
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12);
 }
+
 .photo2{
   display: flex;
   justify-self: end;

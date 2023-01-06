@@ -8,15 +8,22 @@ import Layout from '../components/Layout.astro';
       <div class="header">
         <h1 class="title">Ci Sposiamo! </h1>
         <div class="photoWrapper">
-          <div class="photos">
-            <img src="../../public/foto/valeLuca2.jpg" class="photo3"/>
-          </div>
+          <!-- Inizia carosello -->
+          <div
+            class="photo-carousel"
+            data-flickity='{ "cellAlign": "left", "imagesLoaded": true, "wrapAround": true, "freeScroll": true }'
+           >
+            <img src="../../public/foto/valeLuca2.jpg" />
+            <img src="../../public/foto/valeLuca1.jpg" />
+            <img src="../../public/foto/valeLuca3.jpg" />
+          </div> 
+          <!-- Fine carosello -->
           <img src="../../public/assets/peonia3b.png" height=170 class="photo1"/>
           <img src="../../public/assets/orchidea1b.png" height=170 class="photo2"/>
         </div>
         <div class="body">
           <p>
-          Siamo felicei di annunciarvi che, ebbene si, <strong>Sabato 8 Luglio 2023</strong>, ci sposiamo!
+          Siamo felicei di annunciarvi che, ebbene si, <strong>Sabato 8 Luglio 20233</strong>, ci sposiamo!
           </p>
           <p>
           Vogliamo che sia un giorno speciale anche per voi, quindi ci raccomandiamo...
