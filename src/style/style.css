@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
 /*
+
 :root {
   --main-family: 'Poppins', sans-serif;
   --color-bg: linear-gradient(180deg, #FFFFFF 0%, #AEC6DC 100%);
@@ -47,22 +50,26 @@ html {
 
 p{
   font-family: 'Libre Baskerville', serif; 
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
 
-.body{
-  padding: 0 1.2rem;
-  margin-top:1rem;
+.testo{
+  padding: 0 3.2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .header h1 {
-  padding-top:9%;
+  padding: 1rem 0;
   margin: 0;
 }
 
 .titoletto{
   font-family: 'Nanum Myeongjo', serif;
+  font-family: 'DM Serif Text', serif;
   font-size: 1.5rem;
+  font-weight:100;
   color: rgb(149, 97, 73);
 }
 /*
@@ -96,6 +103,14 @@ p{
   position: relative;
   overflow: hidden;
   border-radius: 15px;
+  box-shadow:
+   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+   0 12.5px 10px rgba(0, 0, 0, 0.06),
+   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+   0 100px 80px rgba(0, 0, 0, 0.12)
+  ; 
 }
 
 .slide {
@@ -146,17 +161,21 @@ p{
 
 .peonia{
   position: absolute;
-  transform:rotate(-45deg);
-  left:0;
+  transform: rotate(-45deg);
+  right: -41px;
+  z-index: -1;
+  opacity: 52%;
+  top: 679px;
 }
 
 .orchidea{
   position: absolute;
+  left: -40px;
+  top: 373px;
   display: flex;
-  justify-self: end;
-  align-self:end;
-  transform:rotateY(180deg);
-  right:0;
+  transform: rotateY(180deg) rotateZ(25deg);
+  z-index: -1;
+  opacity: 70%;
 }
 
 .photo3{
