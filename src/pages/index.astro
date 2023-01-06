@@ -7,14 +7,30 @@ import Layout from '../components/Layout.astro';
     <div id="content">
       <div class="header">
         <h1 class="title">Ci Sposiamo! </h1>
-        <div class="photoWrapper">
+        <div class="sliderWrapper">
+          <div class="slider">
+            <div class="slide">
+              <img src="../../public/foto/valeLuca2.jpg" />
+            </div>
+
+            <div class="slide">
+              <img src="../../public/foto/valeLuca3.jpg" />
+            </div>
+
+            <div class="slide">
+              <img src="../../public/foto/valeLuca1.jpg" />
+            </div>
+            <button class="btn btn-next">&gt;</button>
+            <button class="btn btn-prev">&lt;</button>
+          <!-- 
           <div class="photos">
             <img src="../../public/foto/valeLuca2.jpg" class="photo3"/>
           </div>
-          <img src="../../public/assets/peonia3b.png" height=170 class="photo1"/>
-          <img src="../../public/assets/orchidea1b.png" height=170 class="photo2"/>
+          -->
+         </div>
         </div>
         <div class="body">
+         <img src="../../public/assets/peonia3b.png" height=170 class="peonia"/>
           <p>
           Siamo felicei di annunciarvi che, ebbene si, <strong>Sabato 8 Luglio 2023</strong>, ci sposiamo!
           </p>
@@ -24,6 +40,7 @@ import Layout from '../components/Layout.astro';
           <p>
           Se volete renderci piu' facile l'organizzazione dei preparativi, andate alla sezione <strong>RSVP</strong> e fateci sapere se sarete dei nostri!
           </p>
+         <img src="../../public/assets/orchidea1b.png" height=170 class="orchidea"/>
         </div>
 
         <h2 class="titoletto">
