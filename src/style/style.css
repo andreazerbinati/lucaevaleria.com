@@ -17,8 +17,9 @@ html {
 }
 
 ul{
+  width:100%;
   list-style:none;
-  padding:0;
+  padding:0.2rem 0.5rem 0 0.5rem;
 }
 
 h2{
@@ -112,7 +113,7 @@ p{
   height: 350px;
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
+  /*border-radius: 1rem;*/
   box-shadow:
    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -205,6 +206,10 @@ p{
   display: flex;
   flex-direction: column;
   align-items:center;
+  background-color: #fce7d6;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border:1px solid burlywood;
 }
 
 #RSVP{
@@ -215,7 +220,26 @@ p{
 }
 
 #RSVP button {
-  margin-top: 1rem; 
+  margin-top: 1.2rem; 
+}
+
+button{
+  background: none;
+  outline: none;
+  border: 2px solid var(--color-golden-brown);
+  padding: 0.5rem;
+  color:var(--color-golden-brown); 
+  font-size:1rem;
+  text-transform: capitalize;
+}
+
+button:hover{
+  color: var(--color-bg);
+  background: var(--color-golden-brown);
+}
+
+#excited{
+  font-size: 2rem;
 }
 
 .thanks{
