@@ -66,7 +66,6 @@ import Layout from '../components/Layout.astro';
           <div class="titolotto">Villa Grabau</div>
           <img src="../../public/foto/villa.jpg" width=300 style="margin-top:0.7rem;"/>
           <ul>
-            <li>A seguire,</li>
             <li>Via di Matraia, 269 <br> Lucca, 55100 (LU)</li>
           </ul>
         </div>
@@ -77,14 +76,14 @@ import Layout from '../components/Layout.astro';
           </h2>
           <span class="titolotto">Inserisci Nome e Cognome <br> per ogni invitato</span>
           <p style="padding: 0 3rem;">
-            Se volete renderci piu' facile l'organizzazione fateci sapere se sarete presenti e se avete allergie o intolleranze
+          <span style="white-space:nowrap;">Se volete agevolarci l'organizzazione,</span> fateci sapere se sarete presenti e se avete allergie o intolleranze
           </p>
           <form class="form">
             <label> Partecipante
               <input placeholder="Mario Rossi"></input>
             </label>
             <label> Allergie
-              <input placeholder="latticini, rucola"></input>
+              <input placeholder="Latticini, rucola"></input>
             </label>
             <br><button>conferma presenza</button>
           </form>
@@ -95,16 +94,35 @@ import Layout from '../components/Layout.astro';
             Non vediamo l'ora di festeggiare insieme!
           </h2>
           <p>
-            La vostra presenza sarà per noi il dono più bello. Se desiderate farci un regalo, potete aiutarci a realizzare il sogno di un'avventura in giro per il mondo.
+            La vostra presenza sarà per noi il dono più bello. Se desiderate farci un regalo, potete aiutarci a realizzare il sogno di un'avventura in giro per il mondo!
           <br>
           <br>
-          <button>Lista di Nozze </button>
+          <button id="regaloBtn">Lista di Nozze </button>
           <!-- <strong>IT6912385671231278912834E91823</strong> -->
           </p>
         </div>
         <div class="bttns">
       </div>
       <footer class="footer" />
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="titoletto" id="excited">
+            Un viaggio da sogno...
+          </h2>
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Fusce eget justo tortor. Ut vitae condimentum mauris, a tincidunt lacus.
+          Proin maximus tellus vel fringilla consectetur.
+          Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          In posuere ante ac dolor accumsan iaculis.
+          Pellentesque ut molestie neque. Praesent nulla ante, aliquam semper iaculis ornare, vulputate nec tellus. Vivamus lobortis faucibus ante. Proin consequat tristique dui, et dignissim lacus elementum ut. Sed lobortis massa et mattis ultricies. </p>
+          <p>IT6912385671231278912834E91823</p>
+        </div>
+
+      </div>
     </div>
 	</main>
 </Layout>
